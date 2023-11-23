@@ -1,6 +1,7 @@
 package com.hello;
 
 import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.media.Ringtone;
@@ -27,6 +28,8 @@ public class AlarmReceiver extends BroadcastReceiver {
         if (alarmUri == null) {
             alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         }
+        Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + context.getPackageName() + "/" + R.raw.ringtone_yoasobi);
+
 
         Ringtone ringtone = RingtoneManager.getRingtone(context, alarmUri);
         if (ringtone != null) {

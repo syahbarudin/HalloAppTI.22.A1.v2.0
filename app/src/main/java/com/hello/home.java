@@ -2,13 +2,12 @@ package com.hello;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class home extends AppCompatActivity {
-    private Button btnMove;
+    private ImageButton btnMove;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,48 +16,39 @@ public class home extends AppCompatActivity {
 
         btnMove = findViewById(R.id.button_move_count);
 
-        btnMove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(home.this, FiboActivity.class);
-                startActivity(i);
-            }
+        btnMove.setOnClickListener(view -> {
+            Intent i = new Intent(home.this, FiboActivity.class);
+            startActivity(i);
         });
 
-        Button buttonMovehallo = findViewById(R.id.button_move_hallo);
-        buttonMovehallo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(home.this, MainActivity.class);
-                startActivity(intent);
-            }
+        ImageButton buttonMovehallo = findViewById(R.id.button_move_hallo);
+        buttonMovehallo.setOnClickListener(v -> {
+            Intent intent = new Intent(home.this, MainActivity.class);
+            startActivity(intent);
         });
 
-        Button buttonMoveToScroll = findViewById(R.id.button_move_to_other_scroll);
-        buttonMoveToScroll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(home.this, scrollActivity.class);
-                startActivity(intent);
-            }
+        ImageButton buttonMoveToScroll = findViewById(R.id.button_move_to_other_scroll);
+        buttonMoveToScroll.setOnClickListener(v -> {
+            Intent intent = new Intent(home.this, scrollActivity.class);
+            startActivity(intent);
         });
 
-        Button buttonMoveToOtherActivity = findViewById(R.id.buttonMoveToOtherActivity);
-        buttonMoveToOtherActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(home.this, KeduaActivity.class);
-                startActivity(intent);
-            }
+        ImageButton buttonMoveToOtherActivity = findViewById(R.id.buttonMoveToOtherActivity);
+        buttonMoveToOtherActivity.setOnClickListener(v -> {
+            Intent intent = new Intent(home.this, KeduaActivity.class);
+            startActivity(intent);
         });
 
-        Button buttonMoveToalarm = findViewById(R.id.button_move_to_alarm);
-        buttonMoveToalarm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(home.this, SetAlarm.class);
-                startActivity(intent);
-            }
+        ImageButton buttonMoveToalarm = findViewById(R.id.button_move_to_alarm);
+        buttonMoveToalarm.setOnClickListener(v -> {
+            Intent intent = new Intent(home.this, SetAlarm.class);
+            startActivity(intent);
+        });
+
+        ImageButton buttonMoveToMap = findViewById(R.id.button_map);
+        buttonMoveToMap.setOnClickListener(v -> {
+            Intent intent = new Intent(home.this,MapActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -13,7 +13,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class activitySplash extends AppCompatActivity {
-    private static final int SPLASH_TIME_OUT = 12000;
+    private static final int SPLASH_TIME_OUT = 10000;
     ProgressBar pb;
     int counter = 0;
 
@@ -25,13 +25,10 @@ public class activitySplash extends AppCompatActivity {
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(getApplicationContext(), home.class));
-                finish();
-            }
-        }, 12000);
+        handler.postDelayed(() -> {
+            startActivity(new Intent(getApplicationContext(), home.class));
+            finish();
+        }, 10000);
 
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
@@ -39,18 +36,15 @@ public class activitySplash extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(activitySplash.this, home.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(activitySplash.this, home.class);
+            startActivity(intent);
+            finish();
         }, SPLASH_TIME_OUT);
 
     }
     public void prog(){
-        pb=(ProgressBar)  findViewById(R.id.pb);
+        pb= findViewById(R.id.pb);
         final Timer t = new Timer();
         TimerTask tt=new TimerTask() {
             @Override

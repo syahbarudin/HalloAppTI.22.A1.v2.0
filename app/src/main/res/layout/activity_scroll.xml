@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/night_sky"
     >
 
     <TextView
@@ -10,10 +11,10 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:padding="@dimen/padding_regular"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:text="@string/articel_title"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@android:color/white"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/padding_regular"
                 android:text="@string/articel_subtitle"
+                android:textColor="@color/red"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault"/>
 
             <TextView
@@ -38,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
+                android:textColor="@color/Yellow"
                 android:lineSpacingExtra="@dimen/padding_regular"
                 android:text="@string/articel_text" />
         </LinearLayout>
