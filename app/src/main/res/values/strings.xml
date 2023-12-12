@@ -80,4 +80,8 @@
     <string name="Back">Reset</string>
     <string name="editText_main">Enter Your Message</string>
     <string name="editText_second">Enter Your Reply</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
