@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gi"
+        android:src="@drawable/genshin"/>
+
+    <TextView
+        android:id="@+id/text_gi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genshin Impact"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hsr"
+        android:src="@drawable/hsr"/>
+
+    <TextView
+        android:id="@+id/text_hsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Honkai Star Rail"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/meler"
+        android:src="@drawable/meler"/>
+
+    <TextView
+        android:id="@+id/text_meler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Legends : Bang Bang"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hi3"
+        android:src="@drawable/hi3"/>
+
+    <TextView
+        android:id="@+id/text_hi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Honkai Impact 3rd"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dota"
+        android:src="@drawable/dota2"/>
+
+    <TextView
+        android:id="@+id/text_dota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dota 2"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieFragment"
+
+    >
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tate1"
+        android:src="@drawable/tate_s1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tate no yuusha no nariagari S1"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tate2"
+        android:src="@drawable/tate_s2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tate no yuusha no nariagari S2"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eminance1"
+        android:src="@drawable/eminance"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kage no jitsuryokusha ni naritakute! S1"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eminance2"
+        android:src="@drawable/eminance_2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kage no jitsuryokusha ni naritakute! S2"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goblin"
+        android:src="@drawable/goblin_1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goblin Slayer S1"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/konosuba"
+        android:src="@drawable/konosuba"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kono Subarashii Sekai ni Shukufuku wo!"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
