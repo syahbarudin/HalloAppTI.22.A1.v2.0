@@ -8,17 +8,20 @@
     >
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gi"
-        android:src="@drawable/genshin"/>
+        android:src="@drawable/genshin"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/text_gi"
@@ -27,6 +30,7 @@
         android:text="Genshin Impact"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:layout_gravity="center"
         />
 
     <ImageView
@@ -34,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hsr"
-        android:src="@drawable/hsr"/>
+        android:src="@drawable/hsr"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/text_hsr"
@@ -43,13 +48,15 @@
         android:text="Honkai Star Rail"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:layout_gravity="center"
         />
     <ImageView
         android:layout_marginTop="50dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/meler"
-        android:src="@drawable/meler"/>
+        android:src="@drawable/meler"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/text_meler"
@@ -58,13 +65,15 @@
         android:text="Mobile Legends : Bang Bang"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:layout_gravity="center"
         />
     <ImageView
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hi3"
-        android:src="@drawable/hi3"/>
+        android:src="@drawable/hi3"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/text_hi3"
@@ -73,13 +82,15 @@
         android:text="Honkai Impact 3rd"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:layout_gravity="center"
         />
     <ImageView
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dota"
-        android:src="@drawable/dota2"/>
+        android:src="@drawable/dota2"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/text_dota"
@@ -88,6 +99,7 @@
         android:text="Dota 2"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:layout_gravity="center"
         />
 </LinearLayout>
 </ScrollView>
