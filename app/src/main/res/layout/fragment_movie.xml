@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:text="Kono Subarashii Sekai ni Shukufuku wo!"
         android:textSize="25sp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"/>
 </LinearLayout>
 </ScrollView>
 </RelativeLayout>
